@@ -1,0 +1,65 @@
+$ openssl s_client -connect $INGRESS:443 -servername marketplace.boutiquestore.com -CAfile root.crt
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:/CN=marketplace.boutiquestore.com/O=boutique store
+   i:/O=boutiquestore Inc./CN=boutiquestore.com
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIC7jCCAdYCAQAwDQYJKoZIhvcNAQEFBQAwOTEbMBkGA1UECgwSYm91dGlxdWVz
+dG9yZSBJbmMuMRowGAYDVQQDDBFib3V0aXF1ZXN0b3JlLmNvbTAeFw0yMTA1MjIx
+MjM0NDlaFw0yMjA1MjIxMjM0NDlaMEExJjAkBgNVBAMMHW1hcmtldHBsYWNlLmJv
+dXRpcXVlc3RvcmUuY29tMRcwFQYDVQQKDA5ib3V0aXF1ZSBzdG9yZTCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBANRRObE7vIK8mQJIMDq7+SFQkwS1sce4
+tNFHJFKikB/j2djJ4EBFSjiWwXHlrqrsyLXcfxziEeu3WMHqRP4zESVO7p6LXL/2
+55XMuAsQ/OrjcdHAUmRS0bHg3cqKQICLv1EMrNq4PpzBqPgGPsCNUnI5PWOhLr48
+8+py6qv3VWo3zq4sLVfHP/seg7mq29loEP6PaqdMi5ON3mVtYR2WJkRKBG5CLrqR
+1Hq7qslXK7SWJzrF4PnLVEgQvMt9A9QKRmuwKuIpS/hLFxmUm2SOrrMZ/j5jcAIV
+CM2FWupYwFCgExhrwM0NY/aLDbGJN3v6fEoYq1hnGbpwC9pBGkatHSMCAwEAATAN
+BgkqhkiG9w0BAQUFAAOCAQEAvQA0MM6DHSuxGRZUSYWTgKw935JS/W3bXiiOmzJk
+cUujjjr9GBWAViS/xZ6oD82ONeUET8RkThHRfW1SfgjKlzBmCO7xRrItEkQuunlG
+AXGc9/j0aNqji5oxoXAd6zUHkOTlCuJ0i5RF80q7iJVwi2RoFJSnSM1Rvia7WCa7
+PWYI2Gc1G+gy79DiLQtn9pzNHi8QuicS4FewIHG31FXDFi+qlvdGaBLWDAyOHSrZ
+yROAEQdua+18VnEp4AgaRxdp1mr682xLVSTmoFjr2M8EoBIJmNKCRkA8ClxV6FDu
+QtMUrrbTl3FEW7utSPMDwxzXmJmgf5byaOsqjNu9AM9+SA==
+-----END CERTIFICATE-----
+subject=/CN=marketplace.boutiquestore.com/O=boutique store
+issuer=/O=boutiquestore Inc./CN=boutiquestore.com
+---
+No client certificate CA names sent
+Server Temp Key: ECDH, X25519, 253 bits
+---
+SSL handshake has read 1397 bytes and written 319 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-CHACHA20-POLY1305
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-CHACHA20-POLY1305
+    Session-ID: D5D5D05B087EEA55B8B3ECDA55CB77C6A73BD93CF256AC656D82E9A1FCA70383
+    Session-ID-ctx: 
+    Master-Key: 98741B45118703BDB173AA42DD6FB65DA817E3709EF62AA110FA04CB36285461DFCADE3091AF4EB55971D6B50ED3C288
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 55 d2 af 34 79 24 87 28-61 97 ce 88 02 d1 c7 e5   U..4y$.(a.......
+    0010 - dd 3c 86 9b 61 2c b9 c4-a1 aa a9 50 4a 57 24 93   .<..a,.....PJW$.
+    0020 - f0 21 ba 52 a5 96 24 6e-1c d3 28 46 b1 24 61 3c   .!.R..$n..(F.$a<
+    0030 - 8d 4f e9 ad 56 3a 6b 87-52 51 f5 e1 1b 07 d4 3f   .O..V:k.RQ.....?
+    0040 - 8d 48 78 83 53 37 4f 12-ee 38 3d 54 c4 25 1a 66   .Hx.S7O..8=T.%.f
+    0050 - 36 a1 e0 5b 5a 72 05 1a-6c 66 24 bf 17 3b ff ee   6..[Zr..lf$..;..
+    0060 - d5 7e d2 da ce 03 c4 f3-f9 08 6c 8c 72 4e 80 86   .~........l.rN..
+    0070 - b3 81 e3 11 cf 9f d6 63-b9 18 56 e7 67 5a 4d 20   .......c..V.gZM 
+    0080 - a1 9f 41 f6 97 dd ac 90-d8 fa d4 58 f4 7a 9a fa   ..A........X.z..
+    0090 - e3 1a 46 b8 a4 65 ca 06-5d f7 11 63 3f 4f 3e a2   ..F..e..]..c?O>.
+    00a0 - 85 b3 da ad f5 98 83 0d-c1 9d 23 32 59 7f 20 1b   ..........#2Y. .
+    00b0 - cc 89 08 bb 47 85 1a f1-85 81 66 c0 c9 be 27 7b   ....G.....f...'{
+
+    Start Time: 1621688894
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+---
